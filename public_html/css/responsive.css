@@ -1,0 +1,42 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Oct 31, 2022, 3:44:05 PM
+    Author     : Tijana
+*/
+
+/*
+BRAKE POINTS FOR BOOTSTRAP
+
+
+> 0px XS - NO NAME
+
+> 576px SM - small devices
+
+> 768px MD - medium devices
+
+> 992px LG - large devices
+
+> 1200px XL - extra large devices
+*/
+
+
+/*PISANJE CUSTOM RESPONSIVE CODE*/
+
+@media(min-width:576px){
+    
+} 
+
+@media(min-witdh:768px){
+    
+}
+
+@media(min-width:992px){
+    
+}
+
+@media(min-width:1200px){
+    
+}
