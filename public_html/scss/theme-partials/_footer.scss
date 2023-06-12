@@ -1,0 +1,21 @@
+$copyright-color: $gray-900;
+
+.footer{
+    padding: 30px 0;
+
+    .social-icons{
+        a{
+            padding: 17px 10px;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+    }
+    
+    .copyright{
+        font-size: 1.2rem;
+        a{
+           color: $copyright-color; 
+        }
+    }
+}
+

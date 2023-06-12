@@ -1833,7 +1833,7 @@ pre code {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #F5F5F5;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -3477,7 +3477,7 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  border: 1px solid #F5F5F5;
   border-radius: 0.25rem;
 }
 
@@ -3712,7 +3712,7 @@ input[type="button"].btn-block {
   color: #495057;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat;
-  border: 1px solid #ced4da;
+  border: 1px solid #F5F5F5;
   border-radius: 0.25rem;
   appearance: none;
 }
@@ -3813,7 +3813,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
-  border: 1px solid #ced4da;
+  border: 1px solid #F5F5F5;
   border-radius: 0.25rem;
 }
 
@@ -9827,21 +9827,299 @@ body {
 
 h1 {
   font-family: "Bodoni";
-  font-size: 6rem;
-  line-height: 8.4rem;
+  font-size: 3rem;
+  line-height: 6rem;
   letter-spacing: 2rem;
   color: #fff;
 }
 
 h2 {
-  font-size: 3.6rem;
-  line-height: 4.4rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
 }
 
 h3 {
   font-family: "Bodoni";
   font-size: 3rem;
   line-height: 4.5rem;
+  text-transform: uppercase;
+}
+
+header {
+  padding: 15px 0;
+}
+
+header .navbar-brand img {
+  height: 25px;
+  width: auto;
+  padding: 0;
+}
+
+header .navbar-toggler span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  color: #1E1E1E;
+  margin-bottom: 5px;
+}
+
+header .navbar-toggler span:last-of-type {
+  margin-bottom: 0;
+}
+
+header .navbar-nav a {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  padding: 10px 0;
+  text-align: center;
+  color: #1E1E1E;
+  border-bottom: 1px solid transparent;
+}
+
+header .navbar-nav a:hover {
+  border-bottom: 1px solid #ECD9D9;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 15px 0;
+  }
+  header .navbar-nav li {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .navbar-nav li {
+    margin-left: 74px;
+  }
+}
+
+.lead-section {
+  padding: 15px 0;
+  background-position: center top;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 640px;
+}
+
+.lead-section .lead-section-title {
+  display: block;
+  margin-top: 175px;
+}
+
+@media (min-width: 768px) {
+  .lead-section {
+    padding: 75px 0;
+  }
+  .lead-section .lead-section-title {
+    margin-top: 140px;
+    font-size: 6rem;
+    line-height: 8.4rem;
+    letter-spacing: 2rem;
+  }
+}
+
+.blog-section {
+  padding: 30px 0;
+}
+
+.blog-section .line {
+  display: block;
+  width: 74px;
+  border-bottom: 1px solid #ECD9D9;
+  margin-bottom: 43px;
+}
+
+.blog-section .blog-item {
+  overflow: hidden;
+}
+
+.blog-section .blog-item .blog-img img {
+  transition: 0.5s linear;
+}
+
+.blog-section .blog-item .blog-img img:hover {
+  transform: scale(1.1);
+}
+
+.blog-section .blog-content {
+  text-align: center;
+  width: 313px;
+  height: 120px;
+}
+
+.blog-section .blog-content .blog-date {
+  font-family: "Bodoni";
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  padding: 22px 0 17px;
+  margin: 0;
+}
+
+.blog-section .blog-content .blog-text {
+  color: #1E1E1E;
+  padding: 0 18px 0;
+}
+
+@media (min-width: 576px) {
+  .blog-section .blog-img img {
+    margin-bottom: 20px;
+  }
+  .blog-section .blog-content {
+    position: absolute;
+    background-color: #fff;
+    height: 161px;
+    top: 230px;
+    left: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-section .blog-content {
+    top: 330px;
+    left: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog-section {
+    padding: 75px 0 56px;
+  }
+  .blog-section .blog-content {
+    top: 130px;
+    left: 1px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog-section .blog-content {
+    top: 160px;
+    left: 35px;
+  }
+}
+
+.services-section {
+  padding: 50px 0;
+}
+
+.services-section .line {
+  display: block;
+  border: 1px solid #ECD9D9;
+  width: 74px;
+  margin-bottom: 46px;
+}
+
+.services-section .services-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.services-section .services-description {
+  background-color: #F5F5F5;
+  padding: 80px 35px;
+}
+
+.services-section .services-description .services-title {
+  margin-bottom: 36px;
+}
+
+.services-section .services-description .services-button {
+  border: 1px solid #1E1E1E;
+  padding: 13px 35px;
+}
+
+@media (min-width: 576px) {
+  .services-section .services-description {
+    padding: 140px 96px;
+  }
+  .services-section .services-description .services-title {
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .services-section .services-description {
+    padding: 78px 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services-section .services-description {
+    padding: 125px 95px;
+    height: 447px;
+    width: auto;
+  }
+}
+
+.team-section {
+  padding: 30px 0;
+}
+
+.team-section .line {
+  display: block;
+  border: 1px solid #ECD9D9;
+  width: 74px;
+  margin-bottom: 46px;
+}
+
+.team-section .team-members-slider {
+  border: 1px solid #ECD9D9;
+}
+
+.team-section .team-members-slider .team-member .team-member-img {
+  padding: 30px 10px;
+}
+
+.team-section .team-members-slider .team-member-content {
+  padding: 20px 15px;
+}
+
+.team-section .team-members-slider .team-member-content .team-member-info {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .team-section {
+    padding: 50px 0;
+  }
+  .team-section .team-members-slider .team-member .team-member-img {
+    padding: 40px 20px 0;
+  }
+  .team-section .team-members-slider .team-member-content {
+    padding: 45px 20px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-section .team-members-slider .team-member .team-member-img {
+    padding: 54px 0 40px 95px;
+  }
+  .team-section .team-members-slider .team-member-content {
+    padding: 85px 90px 0px 107px;
+  }
+}
+
+.footer {
+  padding: 30px 0;
+}
+
+.footer .social-icons a {
+  padding: 17px 10px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.footer .copyright {
+  font-size: 1.2rem;
+}
+
+.footer .copyright a {
+  color: #1E1E1E;
 }
 
 /*# sourceMappingURL=theme.css.map */

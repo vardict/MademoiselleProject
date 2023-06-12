@@ -11,9 +11,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="author" content="Tijana Vardic">
         <meta name="description" content="Mademoiselle">
         <meta name="keywords" content="makup, haircut, waxing, beauty trends, trends, beauty">
-        
-        
-        
+
+
+
         <!--
         ovo nam sluzi da mozemo da napravimo precicu do naseg sajta na telefonu.
         Sa ovim mozemo da nam precica na telefono stoji na glavnom ekranu
@@ -22,33 +22,309 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-title" content="Mademoiselle">
         <link rel="apple-touch-icon" href="apple-icon-144x144.png">
-        
+
         <!--ANDROID COMPATIBILITY-->
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="application-name" content="Mademoiselle">
         <link rel="icon" type="image/png" href="android-icon-192x192.png">
-        
-        
+
+
         <!--css files-->
+        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css"/>
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
-        
+
     </head>
     <body>
+
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="mb-3 mb-md-0" src="img/logo.png" alt=""/>
+                    </a>
+                    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="services.html">about <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="team.html">services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="about.html">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="contact.html">contact</a>
+                            </li>
+                        </ul>                        
+                    </div>
+                </nav><!--.navigation end-->
+            </div> <!--.container end-->
+        </header><!--header end-->
+
+        <!--main start-->
+        <main>
+            <section class="lead-section" style="background-image: url('img/home-lead.png')">
+                <div class="container">
+                    <h1 class="lead-section-title text-center">Welcome to <br> Mademoiselle</h1>
+                </div>
+            </section><!--.lead section end-->
+
+            <!--Blog section start-->
+            <section class="blog-section">
+                <div class="container">
+                    <h3 class="mb-4">Stay Up with the Latest Beauty Trends</h3>
+                    <span class="line"></span>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-5 mb-lg-0">                            
+                            <article class="blog-item">
+                                <a href="blog-single.html" class="blog-img">
+                                    <img src="img/home-page/home-01.png" alt=""/>
+                                </a>
+                                <div class="blog-content">
+                                    <p class="blog-date">07/13/2019</p>
+                                    <a href="blog-single.html" class="blog-text text-uppercase">
+                                        Welcome To The Online Best Model
+                                        Winner Contest At Look of the year
+                                    </a>
+                                </div>
+                            </article>                                                        
+                        </div><!--.col-01 end-->
+
+                        <div class="col-12 col-lg-4 mb-5 mb-lg-0">                            
+                            <article class="blog-item">
+                                <a href="blog-single.html" class="blog-img">
+                                    <img src="img/home-page/home-02.png" alt=""/>  
+                                </a>
+                                <div class="blog-content">
+                                    <p class="blog-date">05/15/2019</p>
+                                    <a href="blog-single.html" class="blog-text text-uppercase">
+                                        Aiming For Higher The Mastopexy
+                                    </a>
+                                </div>
+                            </article>                                                        
+                        </div><!--.col-02 end-->
+
+                        <div class="col-12 col-lg-4 mb-5 mb-lg-0">                            
+                            <article class="blog-item">
+                                <a href="blog-single.html" class="blog-img">
+                                    <img src="img/home-page/home-03.png" alt=""/>
+                                </a>
+                                <div class="blog-content">
+                                    <p class="blog-date">02/15/2019</p>
+                                    <a href="blog-single.html" class="blog-text text-uppercase">
+                                        Seven Steps For Keeping Teeth Healthy 
+                                        For A Lifetime
+                                    </a>
+                                </div>
+                            </article>                                                        
+                        </div><!--.col-03 end-->
+                    </div><!--.row end-->
+                </div><!--.container end-->
+            </section><!--.blog section-->
+
+            <!--services section start-->
+            <section class="services-section">
+                <div class="container">
+                    <h3 class="mb-4">Our Services</h3>
+                    <span class="line"></span>
+                    <!--.row start-->
+                    <div class="row no-gutters ">
+                        <div class="col-12 col-lg-6">
+                            <article class="services-description">
+                                <h2 class="services-title">
+                                    Lip augmentation Lip filling with hyaluronum
+                                </h2>
+                                <a href="services-single.html" class="btn text-uppercase services-button rounded-0">
+                                    LEARN MORE
+                                </a>
+                            </article>
+                        </div><!--.col 01.01 end-->
+                        <div class="col-12 col-lg-6">                            
+                            <figure class="services-img">
+                                <img src="img/home-page/services-01.png" alt=""/>
+                            </figure>                       
+                        </div><!--.col 01.02 end-->
+
+                        <div class="col-12 col-lg-6 order-lg-4">
+                            <article class="services-description">
+                                <h2 class="services-title">
+                                    male and female haircut
+                                </h2>
+                                <a href="services-single.html" class="btn text-uppercase services-button rounded-0">
+                                    LEARN MORE
+                                </a>
+                            </article>
+                        </div><!--.col 02.01 end-->
+                        <div class="col-12 col-lg-6 order-lg-3">
+                            <figure class="services-img">
+                                <img src="img/home-page/services-02.png" alt=""/>
+                            </figure>
+                        </div><!--.col 02.02 end-->
+
+                        <div class="col-12 col-lg-6 order-lg-5">
+                            <article class="services-description">
+                                <h2 class="services-title">
+                                    Day and night makeup
+                                </h2>
+                                <a href="services-single.html" class="btn text-uppercase services-button rounded-0">
+                                    LEARN MORE
+                                </a>
+                            </article>
+                        </div><!--.col 02.01 end-->
+                        <div class="col-12 col-lg-6 order-lg-6">
+                            <figure class="services-img">
+                                <img src="img/home-page/services-03.png" alt=""/>
+                            </figure>
+                        </div><!--.col 02.02 end-->
+
+                        <div class="col-12 col-lg-6 order-lg-8">
+                            <article class="services-description">
+                                <h2 class="services-title">
+                                    Waxing with cold and warm wax
+                                </h2>
+                                <a href="services-single.html" class="btn text-uppercase services-button rounded-0">
+                                    LEARN MORE
+                                </a>
+                            </article>
+                        </div><!--.col 02.01 end-->
+                        <div class="col-12 col-lg-6 order-lg-7">
+                            <figure class="services-img">
+                                <img src="img/home-page/services-04.png" alt=""/>
+                            </figure>
+                        </div><!--.col 02.02 end-->
+
+                    </div><!--.row end-->
+                </div><!--.container end-->
+            </section><!--services section end-->
+
+            <!--team section start-->
+            <section class="team-section">
+                <div class="container">
+                    <div>
+                        <h3 class="mb-4">Trust our professionals</h3>
+                        <span class="line"></span>
+                    </div>
+                    <!--ul list start-->
+                    <ul class="team-members-slider owl-carousel owl-theme list-unstyled"> 
+                        <!--.team-member-1 start-->
+                        <li class="team-member">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <a href="#" class="d-block team-member-img">
+                                        <img src="img/home-page/team-member.png" alt=""/>
+                                    </a>
+                                </div><!--.col-1.2-end-->
+                                <div class="col-12 col-md-6">
+                                    <article class="team-member-content">
+                                        <h2 class="team-member-name text-uppercase mb-5">
+                                            Vera Valdez
+                                        </h2>
+                                        <p class="team-member-info">
+                                            Lorem Ipsum is simply dummy text of 
+                                            the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's 
+                                            standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley 
+                                            of type and scrambled it to make a type 
+                                            specimen book. It has survived not only 
+                                            five centuries, but also the leap into 
+                                            electronic typesetting, remaining essentially unchanged.
+                                        </p>                                     
+                                    </article>
+                                </div><!--.col-1.1-end-->                                
+                            </div><!--.row end-->                       
+                        </li><!--.team-member-1 end-->
+                        
+                        <!--.team-member-2 start-->
+                        <li class="team-member">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <a href="#" class="d-block team-member-img">
+                                        <img src="img/home-page/team-member.png" alt=""/>
+                                    </a>
+                                </div><!--.col-2.1-end-->
+                                <div class="col-12 col-md-6">
+                                    <article class="team-member-content">
+                                        <h2 class="team-member-name text-uppercase mb-5">
+                                            Vera Valdez
+                                        </h2>
+                                        <p class="team-member-info">
+                                            Lorem Ipsum is simply dummy text of 
+                                            the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's 
+                                            standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley 
+                                            of type and scrambled it to make a type 
+                                            specimen book. It has survived not only 
+                                            five centuries, but also the leap into 
+                                            electronic typesetting, remaining essentially unchanged.
+                                        </p>                                     
+                                    </article>
+                                </div><!--.col-2.2-end-->                              
+                            </div><!--.row end-->                       
+                        </li><!--.team-member-2 end-->
+                        
+                        <!--.team-member-3 start-->
+                        <li class="team-member">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <a href="#" class="d-block team-member-img">
+                                        <img src="img/home-page/team-member.png" alt=""/>
+                                    </a>
+                                </div><!--.col-3.1-end-->
+                                <div class="col-12 col-md-6">
+                                    <article class="team-member-content">
+                                        <h2 class="team-member-name text-uppercase mb-5">
+                                            Vera Valdez
+                                        </h2>
+                                        <p class="team-member-info">
+                                            Lorem Ipsum is simply dummy text of 
+                                            the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's 
+                                            standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley 
+                                            of type and scrambled it to make a type 
+                                            specimen book. It has survived not only 
+                                            five centuries, but also the leap into 
+                                            electronic typesetting, remaining essentially unchanged.
+                                        </p>                                     
+                                    </article>
+                                </div><!--.col-3.2-end-->                             
+                            </div><!--.row end-->                       
+                        </li><!--.team-member-3 end-->
+                    </ul><!--ul-end-->
+                </div><!--.container end-->
+            </section><!--.team section end-->
+
+        </main><!--main end-->
+
+        <!--footer start-->
+        <footer class="footer">
+            <div class="container">
+                <div class="social-icons text-center">
+                    <a href="https://facebook.com" class="fa-brands fa-facebook-f"></a>
+                    <a href="https://twitter.com" class="fa-brands fa-twitter"></a>
+                    <a href="https://instagram.com" class="fa-brands fa-instagram"></a> 
+                </div>
+                <p class="copyright mb-0 text-center">Copyright &copy; 2019 <a href="index.html">Mademoiselle</a></p>
+            </div><!--.container end-->
+        </footer><!--footer end-->
+
         
-        
-        
-        
-        
-        
-        
-        
-       
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-        
+
         <!--font awesom icons-->
         <script src="https://kit.fontawesome.com/42f609c323.js" crossorigin="anonymous"></script>
-        
+        <script src="js/owl.carousel.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>
