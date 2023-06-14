@@ -1,0 +1,136 @@
+
+.lead-section-about{
+    padding: 15px 0;
+    background-position: center top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 640px;
+
+    .lead-section-title{
+        display: block;
+        margin-top: 270px;
+        font-size: 6rem;
+        line-height: 8.4rem;
+        letter-spacing: 20px;
+    }
+}
+//lead-section-about-end
+
+.about-section{
+    padding: 50px 0;
+
+    .about-blog-text{
+        font-size: 2rem;
+        line-height: 2.8rem;
+        font-weight: $font-weight-light;
+        margin: 37px 0;
+    }
+    .about-blog-title{
+        font-size: 4.4rem;
+        line-height: 5rem;
+    }
+
+    //col-02 
+    .search-bar{
+        input{
+            padding: 15px;
+            width: 300px;
+            height: auto;
+        }
+        input[type="text"]{
+            font-style: italic;
+        }
+        a{
+            position: relative;
+            left: 265px;
+            bottom: 40px;
+            color: $gray-900;
+            text-decoration: none;
+
+        }
+    }//search-bar end
+
+    //blog content
+    .blog-content{
+        background-color: $white;
+        text-align: center;
+        width: 313px;
+        height: 120px;
+        .blog-date{
+            font-family: $bodoni;
+            font-style: italic;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            padding: 22px 0 17px;
+            margin: 0;
+        }//blog-date end
+
+        .blog-text{
+            color: $blog-text-color;
+            padding: 0 18px 0;
+        }//blog-text end
+
+    }//blog-content end
+}//about-section end
+
+@media(min-width:576px){
+    .about-section{
+        padding: 100px 0;
+
+        .search-bar{
+            a{
+                left: -35px;
+                bottom: 0px;
+            }
+        }
+        .blog-content{
+            position: relative;
+            left: 100px;
+            bottom: 70px;
+            z-index: 5;
+        }
+    }
+}
+
+@media(min-width:768px){
+    .about-section{
+
+        .blog-content{
+            left: 190px;
+        }
+    }
+}
+@media(min-width:992px){
+    .about-section{
+
+        .search-bar{
+            a{
+                left: 260px;
+                bottom: 39px;
+            }
+        }
+        .blog-content{
+            left: 0px;
+            bottom: 70px;
+        }
+    }
+}
+@media(min-width:1200px){
+    .about-section{
+
+        .search-bar{
+            input{
+                width: 360px;
+            }
+            a{
+                left:320px;
+                bottom: 40px;
+            }
+        }
+        .blog-content{
+            left: 30px;
+            bottom: 70px;
+        }
+    }
+}

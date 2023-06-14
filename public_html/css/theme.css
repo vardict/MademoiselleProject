@@ -9860,7 +9860,7 @@ header .navbar-toggler span {
   display: block;
   width: 30px;
   height: 3px;
-  color: #1E1E1E;
+  background-color: #ECD9D9;
   margin-bottom: 5px;
 }
 
@@ -10120,6 +10120,125 @@ header .navbar-nav a:hover {
 
 .footer .copyright a {
   color: #1E1E1E;
+}
+
+.lead-section-about {
+  padding: 15px 0;
+  background-position: center top;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 640px;
+}
+
+.lead-section-about .lead-section-title {
+  display: block;
+  margin-top: 270px;
+  font-size: 6rem;
+  line-height: 8.4rem;
+  letter-spacing: 20px;
+}
+
+.about-section {
+  padding: 50px 0;
+}
+
+.about-section .about-blog-text {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+  margin: 37px 0;
+}
+
+.about-section .about-blog-title {
+  font-size: 4.4rem;
+  line-height: 5rem;
+}
+
+.about-section .search-bar input {
+  padding: 15px;
+  width: 300px;
+  height: auto;
+}
+
+.about-section .search-bar input[type="text"] {
+  font-style: italic;
+}
+
+.about-section .search-bar a {
+  position: relative;
+  left: 265px;
+  bottom: 40px;
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+.about-section .blog-content {
+  background-color: #fff;
+  text-align: center;
+  width: 313px;
+  height: 120px;
+}
+
+.about-section .blog-content .blog-date {
+  font-family: "Bodoni";
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  padding: 22px 0 17px;
+  margin: 0;
+}
+
+.about-section .blog-content .blog-text {
+  color: #1E1E1E;
+  padding: 0 18px 0;
+}
+
+@media (min-width: 576px) {
+  .about-section {
+    padding: 100px 0;
+  }
+  .about-section .search-bar a {
+    left: -35px;
+    bottom: 0px;
+  }
+  .about-section .blog-content {
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+    z-index: 5;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-section .blog-content {
+    left: 190px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-section .search-bar a {
+    left: 260px;
+    bottom: 39px;
+  }
+  .about-section .blog-content {
+    left: 0px;
+    bottom: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-section .search-bar input {
+    width: 360px;
+  }
+  .about-section .search-bar a {
+    left: 320px;
+    bottom: 40px;
+  }
+  .about-section .blog-content {
+    left: 30px;
+    bottom: 70px;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
