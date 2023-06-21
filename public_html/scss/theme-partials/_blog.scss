@@ -1,7 +1,7 @@
 $blog-text-color: $gray-900;
 
 .blog-section{
-    padding: 30px 0;
+    padding: 50px 0;
 
     .line{
         display: block;
@@ -11,8 +11,9 @@ $blog-text-color: $gray-900;
     }
 
     .blog-item{
+        margin-bottom: 40px;
         overflow: hidden;
-            .blog-img{
+        .blog-img{
             img{
                 transition: 0.5s linear;
                 &:hover{
@@ -50,23 +51,27 @@ $blog-text-color: $gray-900;
 
 @media(min-width:576px){
     .blog-section{
-        .blog-img{
-            img{
-                margin-bottom: 20px;
-            }
-        }
+
+        /*        .blog-img{
+                    img{
+                        margin-bottom: 20px;
+                    }
+                }*/
         .blog-content{
             position: absolute;
             background-color: $white;
             height: 161px;
             top: 230px;
             left: 110px;
-            margin-bottom: 20px;
+            /*            margin-bottom: 20px;*/
         }
     }
 }
 @media(min-width:768px){
     .blog-section{
+        .blog-item{
+            margin-bottom: 60px;
+        }
         .blog-content{
             top: 330px;
             left: 200px;
@@ -76,7 +81,9 @@ $blog-text-color: $gray-900;
 @media(min-width:992px){
     .blog-section{
         padding: 75px 0 56px;
-
+        .blog-item{
+            margin-bottom: 100px;
+        }
         .blog-content{
             top: 130px;
             left: 1px;

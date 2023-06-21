@@ -9924,7 +9924,7 @@ header .navbar-nav a:hover {
 }
 
 .blog-section {
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .blog-section .line {
@@ -9935,6 +9935,7 @@ header .navbar-nav a:hover {
 }
 
 .blog-section .blog-item {
+  margin-bottom: 40px;
   overflow: hidden;
 }
 
@@ -9968,8 +9969,12 @@ header .navbar-nav a:hover {
 }
 
 @media (min-width: 576px) {
-  .blog-section .blog-img img {
-    margin-bottom: 20px;
+  .blog-section {
+    /*        .blog-img{
+                    img{
+                        margin-bottom: 20px;
+                    }
+                }*/
   }
   .blog-section .blog-content {
     position: absolute;
@@ -9977,11 +9982,14 @@ header .navbar-nav a:hover {
     height: 161px;
     top: 230px;
     left: 110px;
-    margin-bottom: 20px;
+    /*            margin-bottom: 20px;*/
   }
 }
 
 @media (min-width: 768px) {
+  .blog-section .blog-item {
+    margin-bottom: 60px;
+  }
   .blog-section .blog-content {
     top: 330px;
     left: 200px;
@@ -9991,6 +9999,9 @@ header .navbar-nav a:hover {
 @media (min-width: 992px) {
   .blog-section {
     padding: 75px 0 56px;
+  }
+  .blog-section .blog-item {
+    margin-bottom: 100px;
   }
   .blog-section .blog-content {
     top: 130px;
@@ -10267,6 +10278,33 @@ header .navbar-nav a:hover {
   .services-single-section {
     padding: 170px 0;
   }
+}
+
+.lead-blog-section {
+  padding: 50px 0;
+  background-position: center top;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 640px;
+}
+
+.lead-blog-section .lead-section-title {
+  display: block;
+  margin-top: 260px;
+  font-size: 6rem;
+  line-height: 8.4rem;
+  letter-spacing: 20px;
+}
+
+.number .number-item {
+  line-height: 2.4rem;
+  font-size: 1.8rem;
+  padding: 5px;
+  text-decoration: none;
+  font-family: "Bodoni";
+  color: #1E1E1E;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=theme.css.map */
