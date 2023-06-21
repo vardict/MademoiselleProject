@@ -1,4 +1,5 @@
-
+$blog-font: $bodoni;
+$text-light: $font-weight-light;
 
 .lead-blog-section{
     padding: 50px 0;
@@ -7,7 +8,7 @@
     background-repeat: no-repeat;
     width: auto;
     height: 640px;
-    
+
     .lead-section-title{
         display: block;
         margin-top: 260px;
@@ -15,18 +16,90 @@
         line-height: 8.4rem;
         letter-spacing: 20px;
     }
-    
-    
 }
 .number{
+    .number-item{
+        line-height: 2.4rem;
+        font-size: 1.8rem;
+        padding: 5px;
+        text-decoration: none;
+        font-family: $blog-font;
+        color: $gray-900;
+        margin-bottom:20px;
+    }
+}
 
-        .number-item{
-           line-height: 2.4rem;
-           font-size: 1.8rem;
-           padding: 5px;
-           text-decoration: none;
-           font-family: $bodoni;
-           color: $gray-900;
-           margin-bottom:20px;
+
+//Blog-single page
+.blog-single{
+    padding: 50px 0;
+
+    .blog-single-text{
+        .blog-text-date{
+            font-size: 1.4rem;
+            font-weight: $font-weight-bold;
+            font-family: $blog-font;
+            margin-bottom: 20px;
+            .blog-date{
+                font-style: italic;
+                font-weight: $font-weight-base;
+            }
+        }//blog-text-date
+
+        .blog-text{
+            font-size: 2rem;
+            line-height: 2.8rem;
+            font-weight: $text-light;
+        }
+    }//blog-single-text
+}//blog-single
+
+.blog-single-content{
+    padding: 50px 0;
+    .blog-content-text{
+        p{
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            font-weight: $text-light;
+            margin-bottom: 25px;
+            img{
+                padding: 25px 0;
+            }
+        }//p
+    }//blog-content-text
+    
+    .blog-tags{
+        margin-top: 50px;
+        .tag-title{
+          font-style: italic; 
+          font-style: $blog-font;
+        }
+        .tags{
+            a{
+                color: $gray-900;
+                font-family: $blog-font;
+                background-color: $gray-400;
+            }
+        }
+    }//blog-tags
+}//blog-single-content
+
+@media(min-width:576px){
+    .blog-single{
+        .blog-single-text{
+            .blog-title{
+                font-size: 4.4rem;
+                line-height: 5rem;
+            }
         }
     }
+}
+
+@media(min-width:992px){
+    .blog-single{
+        margin-top: 165px;
+    }
+    .blog-single-content{
+        margin-bottom: 270px;
+    }
+}

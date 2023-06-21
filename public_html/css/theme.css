@@ -10307,4 +10307,72 @@ header .navbar-nav a:hover {
   margin-bottom: 20px;
 }
 
+.blog-single {
+  padding: 50px 0;
+}
+
+.blog-single .blog-single-text .blog-text-date {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Bodoni";
+  margin-bottom: 20px;
+}
+
+.blog-single .blog-single-text .blog-text-date .blog-date {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.blog-single .blog-single-text .blog-text {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+}
+
+.blog-single-content {
+  padding: 50px 0;
+}
+
+.blog-single-content .blog-content-text p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.blog-single-content .blog-content-text p img {
+  padding: 25px 0;
+}
+
+.blog-single-content .blog-tags {
+  margin-top: 50px;
+}
+
+.blog-single-content .blog-tags .tag-title {
+  font-style: italic;
+  font-style: "Bodoni";
+}
+
+.blog-single-content .blog-tags .tags a {
+  color: #1E1E1E;
+  font-family: "Bodoni";
+  background-color: #F5F5F5;
+}
+
+@media (min-width: 576px) {
+  .blog-single .blog-single-text .blog-title {
+    font-size: 4.4rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog-single {
+    margin-top: 165px;
+  }
+  .blog-single-content {
+    margin-bottom: 270px;
+  }
+}
+
 /*# sourceMappingURL=theme.css.map */
