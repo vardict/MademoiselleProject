@@ -6,7 +6,7 @@ $border-button: $gray-900;
 .services-section{
     padding: 50px 0;
 
-    
+
     .line{
         display: block;
         border: $line;
@@ -15,15 +15,28 @@ $border-button: $gray-900;
     }
     .services-img{
         img{
-           max-width: 100%;
-           height: auto;
+            width: auto;
+            height: auto;
         }
     }
     .services-description{
         background-color: $light-bg;
         padding: 80px 35px;
-        
-        
+
+        .services-title{
+            margin-bottom: 36px;
+        }
+
+        .services-button{
+            border: 1px solid $border-button;
+            padding: 13px 35px;
+        }
+    }
+
+    .services-description-even{
+        background-color: $primary;
+        padding: 80px 35px;
+
         .services-title{
             margin-bottom: 36px;
         }
@@ -38,9 +51,10 @@ $border-button: $gray-900;
 
 @media(min-width:576px){
     .services-section{
-        .services-description{
+        .services-description, .services-description-even{
             padding: 140px 96px;
-
+            height: 456px;
+            width: auto;
             .services-title{
                 font-size: 3.6rem;
                 line-height: 4.4rem;
@@ -50,17 +64,21 @@ $border-button: $gray-900;
 }
 @media(min-width:992px){
     .services-section{
-        .services-description{
-            padding: 78px 60px;
+        .services-img{
+            img{
+                height: 456px;
+                width: auto;
+            }
         }
-    }
-}
-@media(min-width:1200px){
-    .services-section{
-        .services-description{
+        .services-description, .services-description-even{
             padding: 125px 95px;
-            height: 447px;
-            width: auto;
         }
     }
 }
+/*@media(min-width:1200px){
+    .services-section{
+        .services-description, .services-description-even{
+            padding: 125px 95px;
+        }
+    }
+}*/

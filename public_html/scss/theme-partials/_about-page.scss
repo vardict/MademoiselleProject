@@ -31,6 +31,17 @@
         line-height: 5rem;
     }
 
+    .about-aside{
+        overflow: hidden;
+        .blog-img{
+            img{
+                transition: 0.5s linear;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
     //col-02 
     .search-bar{
         input{

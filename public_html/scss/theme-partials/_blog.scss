@@ -21,7 +21,7 @@ $blog-text-color: $gray-900;
                 }
             }
         }
-    }
+    }//blog item
 
     .blog-content{
         text-align: center;
@@ -41,13 +41,10 @@ $blog-text-color: $gray-900;
         .blog-text{
             color: $blog-text-color;
             padding: 0 18px 0;
-        }
-        //blog-text end
+        } //blog-text end
 
-    }
-    //blog-content end
-}
-//blog-section end
+    }//blog-content end
+}//blog-section end
 
 @media(min-width:576px){
     .blog-section{

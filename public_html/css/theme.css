@@ -9886,6 +9886,10 @@ header .navbar-nav a:hover {
   border-bottom: 1px solid #ECD9D9;
 }
 
+header .navbar-nav .active {
+  border-bottom: 1px solid #ECD9D9;
+}
+
 @media (min-width: 768px) {
   header {
     padding: 15px 0;
@@ -9915,12 +9919,24 @@ header .navbar-nav a:hover {
   margin-top: 175px;
 }
 
+.lead-section .services-section-title {
+  display: block;
+  margin-top: 175px;
+  margin-bottom: 45px;
+}
+
 @media (min-width: 768px) {
   .lead-section {
     padding: 75px 0;
   }
   .lead-section .lead-section-title {
     margin-top: 140px;
+    font-size: 6rem;
+    line-height: 8.4rem;
+    letter-spacing: 2rem;
+  }
+  .lead-section .services-section-title {
+    margin-top: 200px;
     font-size: 6rem;
     line-height: 8.4rem;
     letter-spacing: 2rem;
@@ -10032,7 +10048,7 @@ header .navbar-nav a:hover {
 }
 
 .services-section .services-img img {
-  max-width: 100%;
+  width: auto;
   height: auto;
 }
 
@@ -10050,30 +10066,49 @@ header .navbar-nav a:hover {
   padding: 13px 35px;
 }
 
+.services-section .services-description-even {
+  background-color: #ECD9D9;
+  padding: 80px 35px;
+}
+
+.services-section .services-description-even .services-title {
+  margin-bottom: 36px;
+}
+
+.services-section .services-description-even .services-button {
+  border: 1px solid #1E1E1E;
+  padding: 13px 35px;
+}
+
 @media (min-width: 576px) {
-  .services-section .services-description {
+  .services-section .services-description, .services-section .services-description-even {
     padding: 140px 96px;
+    height: 456px;
+    width: auto;
   }
-  .services-section .services-description .services-title {
+  .services-section .services-description .services-title, .services-section .services-description-even .services-title {
     font-size: 3.6rem;
     line-height: 4.4rem;
   }
 }
 
 @media (min-width: 992px) {
-  .services-section .services-description {
-    padding: 78px 60px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .services-section .services-description {
-    padding: 125px 95px;
-    height: 447px;
+  .services-section .services-img img {
+    height: 456px;
     width: auto;
   }
+  .services-section .services-description, .services-section .services-description-even {
+    padding: 125px 95px;
+  }
 }
 
+/*@media(min-width:1200px){
+    .services-section{
+        .services-description, .services-description-even{
+            padding: 125px 95px;
+        }
+    }
+}*/
 .team-section {
   padding: 30px 0;
 }
@@ -10172,6 +10207,18 @@ header .navbar-nav a:hover {
 .about-section .about-blog-title {
   font-size: 4.4rem;
   line-height: 5rem;
+}
+
+.about-section .about-aside {
+  overflow: hidden;
+}
+
+.about-section .about-aside .blog-img img {
+  transition: 0.5s linear;
+}
+
+.about-section .about-aside .blog-img img:hover {
+  transform: scale(1.1);
 }
 
 .about-section .search-bar input {

@@ -1,4 +1,5 @@
 $hamburger-color: $primary;
+$nav-border: 1px solid $primary;
 
 header{
     padding: 15px 0;
@@ -32,8 +33,11 @@ header{
             color: $gray-900;
             border-bottom: 1px solid transparent;
             &:hover{
-                border-bottom: 1px solid $primary;
+                border-bottom: $nav-border;
             }
+        }
+        .active{
+            border-bottom: $nav-border;
         }
     }
     //.navbar-nav end
