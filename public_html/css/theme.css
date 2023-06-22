@@ -9847,6 +9847,10 @@ h3 {
   letter-spacing: 5px;
 }
 
+a {
+  color: #1E1E1E;
+}
+
 header {
   padding: 15px 0;
 }
@@ -10126,6 +10130,7 @@ header .navbar-nav a:hover {
   padding: 17px 10px;
   font-size: 2rem;
   text-decoration: none;
+  color: #ECD9D9;
 }
 
 .footer .copyright {
@@ -10372,6 +10377,74 @@ header .navbar-nav a:hover {
   }
   .blog-single-content {
     margin-bottom: 270px;
+  }
+}
+
+.contact-section {
+  padding: 50px 0;
+}
+
+.contact-section h2 {
+  font-family: "Bodoni";
+  line-height: 4.5rem;
+  letter-spacing: 5px;
+}
+
+.contact-section .form-control {
+  background-color: rgba(37, 61, 97, 0.02);
+  border: none;
+  height: 50px !important;
+  line-height: 50px;
+  padding: 0 19px;
+}
+
+.contact-section textarea.form-control {
+  height: 149px !important;
+  resize: none;
+}
+
+.contact-section .error-msg * {
+  color: #dc3545;
+  font-size: 1.3rem;
+}
+
+.contact-section button {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.5px;
+  border: 1px solid #1E1E1E;
+  border-radius: 0;
+  margin-top: 29px;
+}
+
+.contact-section .map {
+  width: 699px;
+  height: 561px;
+}
+
+.contact-info {
+  background-color: #ECD9D9;
+  padding: 63px 0;
+}
+
+.contact-info p, .contact-info a {
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+  padding: 10px 0;
+}
+
+@media (min-width: 992px) {
+  .contact-section {
+    padding: 110px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-section .map {
+    position: absolute;
+    right: 0px;
+    top: 180px;
   }
 }
 
