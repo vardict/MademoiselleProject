@@ -1,0 +1,39 @@
+
+.error-section{
+    padding: 15px 0;
+    background-position: center top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: auto;
+    height:800px;
+
+    .error-section-title{
+        display: block;
+        margin-top: 175px;
+        margin-bottom: 45px; 
+    }
+
+    .error-button{
+        a{
+            border: 1px solid $white;
+            color: $white;
+            padding: 12px 33px;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            letter-spacing: 0.5px;
+            border-radius: 0;
+        }
+    }
+}
+
+@media(min-width:768px){
+    .error-section{
+        padding: 75px 0;
+        .error-section-title{
+            margin-top: 200px;
+            font-size: 6rem;
+            line-height: 8.4rem;
+            letter-spacing: 2rem;
+        }
+    }
+}
