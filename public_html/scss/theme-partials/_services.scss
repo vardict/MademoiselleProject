@@ -13,16 +13,16 @@ $border-button: $gray-900;
         width: $line-widht;
         margin-bottom: 46px;
     }
-    .services-img{
-        img{
-            width: auto;
-            height: auto;
-        }
-    }
-    .services-description{
+
+    .service-item:nth-of-type(odd){
         background-color: $light-bg;
-        padding: 80px 35px;
+    }
+    .service-item:nth-of-type(even){
+        background-color: $primary-bg;
+    }
 
+    .service-item-data{
+        padding: 80px 35px;
         .services-title{
             margin-bottom: 36px;
         }
@@ -32,46 +32,36 @@ $border-button: $gray-900;
             padding: 13px 35px;
         }
     }
-
-    .services-description-even{
-        background-color: $primary;
-        padding: 80px 35px;
-
-        .services-title{
-            margin-bottom: 36px;
-        }
-
-        .services-button{
-            border: 1px solid $border-button;
-            padding: 13px 35px;
-        }
-    }
-}
-//services-section end
+}//services-section end
 
 @media(min-width:576px){
     .services-section{
-        .services-description, .services-description-even{
-            padding: 140px 96px;
-            height: 456px;
-            width: auto;
-            .services-title{
-                font-size: 3.6rem;
-                line-height: 4.4rem;
+        .service-item{
+
+            .service-item-data{
+                padding: 140px 96px;
+
+                .services-title{
+                    font-size: 3.6rem;
+                    line-height: 4.4rem;
+                }
             }
         }
     }
 }
 @media(min-width:992px){
     .services-section{
-        .services-img{
-            img{
-                height: 456px;
-                width: auto;
+
+        .service-item{
+            .service-item-image{
+                img{
+                    height: 476px;
+                    width: auto;
+                }
             }
-        }
-        .services-description, .services-description-even{
-            padding: 125px 95px;
+            .service-item-data{
+                padding: 125px 95px;
+            }
         }
     }
 }

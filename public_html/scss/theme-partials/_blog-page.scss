@@ -4,14 +4,13 @@ $text-light: $font-weight-light;
 .lead-blog-section{
     padding: 50px 0;
     background-position: center top;
-    background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     width: auto;
-    height: 640px;
 
     .lead-section-title{
         display: block;
-        margin-top: 260px;
+        padding: 150px 0;
         font-size: 6rem;
         line-height: 8.4rem;
         letter-spacing: 20px;
@@ -96,6 +95,11 @@ $text-light: $font-weight-light;
 }
 
 @media(min-width:992px){
+    .lead-blog-section{
+        .lead-section-title{
+            padding: 240px 0;
+        }
+    }
     .blog-single{
         margin-top: 165px;
     }

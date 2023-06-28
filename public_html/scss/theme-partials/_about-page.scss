@@ -2,14 +2,13 @@
 .lead-section-about{
     padding: 15px 0;
     background-position: center top;
-    background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     width: auto;
-    height: 640px;
 
     .lead-section-title{
         display: block;
-        margin-top: 270px;
+        padding: 150px 0;
         font-size: 6rem;
         line-height: 8.4rem;
         letter-spacing: 20px;
@@ -20,47 +19,49 @@
 .about-section{
     padding: 50px 0;
 
-    .about-blog-text{
-        font-size: 2rem;
-        line-height: 2.8rem;
-        font-weight: $font-weight-light;
-        margin: 37px 0;
-    }
-    .about-blog-title{
-        font-size: 4.4rem;
-        line-height: 5rem;
-    }
-
-    .about-aside{
-        overflow: hidden;
-        .blog-img{
-            img{
-                transition: 0.5s linear;
-                &:hover{
-                    transform: scale(1.1);
+    .about-blog{
+        h2{
+            font-size: 4.4rem;
+            line-height: 5rem;
+        }
+        p{
+            font-size: 2rem;
+            line-height: 2.8rem;
+            font-weight: $font-weight-light;
+            margin: 37px 0;
+        }
+    }//about blog
+    
+    .sidebar-blog{
+        .about-aside{
+            overflow: hidden;
+            .blog-img{
+                img{
+                    transition: 0.5s linear;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
-    }
-    //col-02 
-    .search-bar{
-        input{
-            padding: 15px;
-            width: 300px;
-            height: auto;
-        }
-        input[type="text"]{
-            font-style: italic;
-        }
-        a{
-            position: relative;
-            left: 265px;
-            bottom: 40px;
-            color: $gray-900;
-            text-decoration: none;
+    }//col-02 
+    
+    .input-group{
+        border: 1px solid $black;
 
+        input[type="text"]{
+            font-style: italic;  
+            padding: 30px 15px;   
         }
-    }//search-bar end
+        .input-group-append{
+            button{
+                a{
+                    padding: 5px;
+                }
+            }
+        } 
+       
+    }//search-bar end*/
 
     //blog content
     .blog-content{
@@ -89,12 +90,6 @@
     .about-section{
         padding: 100px 0;
 
-        .search-bar{
-            a{
-                left: -35px;
-                bottom: 0px;
-            }
-        }
         .blog-content{
             position: relative;
             left: 100px;
@@ -105,8 +100,12 @@
 }
 
 @media(min-width:768px){
+    .lead-section-about{
+        .lead-section-title{
+            padding: 270px 0;
+        }
+    }
     .about-section{
-
         .blog-content{
             left: 190px;
         }
@@ -114,13 +113,6 @@
 }
 @media(min-width:992px){
     .about-section{
-
-        .search-bar{
-            a{
-                left: 260px;
-                bottom: 39px;
-            }
-        }
         .blog-content{
             left: 0px;
             bottom: 70px;
@@ -129,16 +121,6 @@
 }
 @media(min-width:1200px){
     .about-section{
-
-        .search-bar{
-            input{
-                width: 360px;
-            }
-            a{
-                left:320px;
-                bottom: 40px;
-            }
-        }
         .blog-content{
             left: 30px;
             bottom: 70px;

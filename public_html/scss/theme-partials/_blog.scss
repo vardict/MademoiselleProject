@@ -49,18 +49,12 @@ $blog-text-color: $gray-900;
 @media(min-width:576px){
     .blog-section{
 
-        /*        .blog-img{
-                    img{
-                        margin-bottom: 20px;
-                    }
-                }*/
         .blog-content{
             position: absolute;
             background-color: $white;
             height: 161px;
             top: 230px;
             left: 110px;
-            /*            margin-bottom: 20px;*/
         }
     }
 }

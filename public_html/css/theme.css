@@ -9829,7 +9829,7 @@ h1 {
   font-family: "Bodoni";
   font-size: 3rem;
   line-height: 6rem;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
   color: #fff;
 }
 
@@ -9908,20 +9908,19 @@ header .navbar-nav .active {
 .lead-section {
   padding: 15px 0;
   background-position: center top;
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   width: auto;
-  height: 640px;
 }
 
 .lead-section .lead-section-title {
   display: block;
-  margin-top: 175px;
+  padding: 150px 0;
 }
 
 .lead-section .services-section-title {
   display: block;
-  margin-top: 175px;
+  padding: 150px 0;
   margin-bottom: 45px;
 }
 
@@ -9930,13 +9929,13 @@ header .navbar-nav .active {
     padding: 75px 0;
   }
   .lead-section .lead-section-title {
-    margin-top: 140px;
+    padding: 170px 0;
     font-size: 6rem;
     line-height: 8.4rem;
     letter-spacing: 2rem;
   }
   .lead-section .services-section-title {
-    margin-top: 200px;
+    padding: 190px 0;
     font-size: 6rem;
     line-height: 8.4rem;
     letter-spacing: 2rem;
@@ -9989,20 +9988,12 @@ header .navbar-nav .active {
 }
 
 @media (min-width: 576px) {
-  .blog-section {
-    /*        .blog-img{
-                    img{
-                        margin-bottom: 20px;
-                    }
-                }*/
-  }
   .blog-section .blog-content {
     position: absolute;
     background-color: #fff;
     height: 161px;
     top: 230px;
     left: 110px;
-    /*            margin-bottom: 20px;*/
   }
 }
 
@@ -10047,57 +10038,43 @@ header .navbar-nav .active {
   margin-bottom: 46px;
 }
 
-.services-section .services-img img {
-  width: auto;
-  height: auto;
-}
-
-.services-section .services-description {
+.services-section .service-item:nth-of-type(odd) {
   background-color: #F5F5F5;
-  padding: 80px 35px;
 }
 
-.services-section .services-description .services-title {
-  margin-bottom: 36px;
-}
-
-.services-section .services-description .services-button {
-  border: 1px solid #1E1E1E;
-  padding: 13px 35px;
-}
-
-.services-section .services-description-even {
+.services-section .service-item:nth-of-type(even) {
   background-color: #ECD9D9;
+}
+
+.services-section .service-item-data {
   padding: 80px 35px;
 }
 
-.services-section .services-description-even .services-title {
+.services-section .service-item-data .services-title {
   margin-bottom: 36px;
 }
 
-.services-section .services-description-even .services-button {
+.services-section .service-item-data .services-button {
   border: 1px solid #1E1E1E;
   padding: 13px 35px;
 }
 
 @media (min-width: 576px) {
-  .services-section .services-description, .services-section .services-description-even {
+  .services-section .service-item .service-item-data {
     padding: 140px 96px;
-    height: 456px;
-    width: auto;
   }
-  .services-section .services-description .services-title, .services-section .services-description-even .services-title {
+  .services-section .service-item .service-item-data .services-title {
     font-size: 3.6rem;
     line-height: 4.4rem;
   }
 }
 
 @media (min-width: 992px) {
-  .services-section .services-img img {
-    height: 456px;
+  .services-section .service-item .service-item-image img {
+    height: 476px;
     width: auto;
   }
-  .services-section .services-description, .services-section .services-description-even {
+  .services-section .service-item .service-item-data {
     padding: 125px 95px;
   }
 }
@@ -10172,15 +10149,14 @@ header .navbar-nav .active {
 .lead-section-about {
   padding: 15px 0;
   background-position: center top;
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   width: auto;
-  height: 640px;
 }
 
 .lead-section-about .lead-section-title {
   display: block;
-  margin-top: 270px;
+  padding: 150px 0;
   font-size: 6rem;
   line-height: 8.4rem;
   letter-spacing: 20px;
@@ -10190,46 +10166,41 @@ header .navbar-nav .active {
   padding: 50px 0;
 }
 
-.about-section .about-blog-text {
+.about-section .about-blog h2 {
+  font-size: 4.4rem;
+  line-height: 5rem;
+}
+
+.about-section .about-blog p {
   font-size: 2rem;
   line-height: 2.8rem;
   font-weight: 300;
   margin: 37px 0;
 }
 
-.about-section .about-blog-title {
-  font-size: 4.4rem;
-  line-height: 5rem;
-}
-
-.about-section .about-aside {
+.about-section .sidebar-blog .about-aside {
   overflow: hidden;
 }
 
-.about-section .about-aside .blog-img img {
+.about-section .sidebar-blog .about-aside .blog-img img {
   transition: 0.5s linear;
 }
 
-.about-section .about-aside .blog-img img:hover {
+.about-section .sidebar-blog .about-aside .blog-img img:hover {
   transform: scale(1.1);
 }
 
-.about-section .search-bar input {
-  padding: 15px;
-  width: 300px;
-  height: auto;
+.about-section .input-group {
+  border: 1px solid #000;
 }
 
-.about-section .search-bar input[type="text"] {
+.about-section .input-group input[type="text"] {
   font-style: italic;
+  padding: 30px 15px;
 }
 
-.about-section .search-bar a {
-  position: relative;
-  left: 265px;
-  bottom: 40px;
-  color: #1E1E1E;
-  text-decoration: none;
+.about-section .input-group .input-group-append button a {
+  padding: 5px;
 }
 
 .about-section .blog-content {
@@ -10257,10 +10228,6 @@ header .navbar-nav .active {
   .about-section {
     padding: 100px 0;
   }
-  .about-section .search-bar a {
-    left: -35px;
-    bottom: 0px;
-  }
   .about-section .blog-content {
     position: relative;
     left: 100px;
@@ -10270,16 +10237,15 @@ header .navbar-nav .active {
 }
 
 @media (min-width: 768px) {
+  .lead-section-about .lead-section-title {
+    padding: 270px 0;
+  }
   .about-section .blog-content {
     left: 190px;
   }
 }
 
 @media (min-width: 992px) {
-  .about-section .search-bar a {
-    left: 260px;
-    bottom: 39px;
-  }
   .about-section .blog-content {
     left: 0px;
     bottom: 70px;
@@ -10287,13 +10253,6 @@ header .navbar-nav .active {
 }
 
 @media (min-width: 1200px) {
-  .about-section .search-bar input {
-    width: 360px;
-  }
-  .about-section .search-bar a {
-    left: 320px;
-    bottom: 40px;
-  }
   .about-section .blog-content {
     left: 30px;
     bottom: 70px;
@@ -10328,15 +10287,14 @@ header .navbar-nav .active {
 .lead-blog-section {
   padding: 50px 0;
   background-position: center top;
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   width: auto;
-  height: 640px;
 }
 
 .lead-blog-section .lead-section-title {
   display: block;
-  margin-top: 260px;
+  padding: 150px 0;
   font-size: 6rem;
   line-height: 8.4rem;
   letter-spacing: 20px;
@@ -10412,6 +10370,9 @@ header .navbar-nav .active {
 }
 
 @media (min-width: 992px) {
+  .lead-blog-section .lead-section-title {
+    padding: 240px 0;
+  }
   .blog-single {
     margin-top: 165px;
   }
